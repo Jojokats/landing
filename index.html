@@ -16,48 +16,93 @@
     <body>
         <!-- Header -->
         <header>
-          <div class="container">
-            <nav>
-              <ul class="nav nav-justified">
-                <li><a href="#">About The App</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Screenshots</a></li>
-                <li><a href="#">Download</a></li>
-                <li><a href="#">Support</a></li>
-              </ul>
-            </nav>
-          </div><!-- /container -->
+          <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+
+              <div class="navbar-collapse collapse">
+                <ul class="nav nav-justified">
+                  <li><a href="#">App</a></li>
+                  <li><a href="#">Features</a></li>
+                  <li><a href="#">Screenshots</a></li>
+                  <li><a href="#">Download</a></li>
+                  <li><a href="#">Support</a></li>
+                </ul>
+              </div><!-- /nav-justified -->
+
+            </div><!-- /container -->
+
+
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+            </div><!-- /navbar-header -->
+
+          </nav>
         </header>
+
+
+        <!-- Carousel -->
+        <section id="slider" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+
+            <div class="item active">
+              <img src="img/slider_a.png" class="img-responsive" alt="slider-a">
+            </div><!-- /item -->
+            <div class="item">
+              <img src="img/slider_b.png" class="img-responsive" alt="slider-b">
+            </div><!-- /item -->
+            <div class="item">
+              <img src="img/slider_c.png" class="img-responsive" alt="slider-c">
+            </div><!-- /item -->
+
+          </div><!-- /carousel-inner -->
+
+          <a href="#slider" class="left carousel-control" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a href="#slider" class="right carousel-control" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+
+          <ol class="carousel-indicators">
+            <li data-target="#slider" data-slide-to="0" class="active"></li>
+            <li data-target="#slider" data-slide-to="1" ></li>
+            <li data-target="#slider" data-slide-to="2" ></li>
+          </ol>
+        </section><!-- /Carousel -->
 
         <!-- Section About-->
         <section id="about" class="about">
           <div class="container">
             <div class="row">
+
               <div class="col-sm-4">
-                <div class="circle">
-                  <div class="blue-circle">
+                  <div class="blue-circle"></div><!-- /blue-circle -->
+
                     <h3 class="text-uppercase text-center">Facebook &amp; Twitter</h3>
                     <p class="text-center">Cardigan enamel pin messenger bag, marfa affogato blue bottle next level. Letterpress viral messenger bag gentrify migas skateboard palo santo, godard neutra knausgaard heirloom activated charcoal disrupt mixtape.</p>
-                  </div><!-- /blue-circle -->
-                </div><!-- /circle -->
+
               </div><!-- /col-sm-4 -->
 
               <div class="col-sm-4">
-                <div class="circle">
-                  <div class="blue-circle">
+                  <div class="blue-circle"></div><!-- /blue-circle -->
+
                     <h3 class="text-uppercase text-center">On Line Support</h3>
                     <p class="text-center">Cardigan enamel pin messenger bag, marfa affogato blue bottle next level. Letterpress viral messenger bag gentrify migas skateboard palo santo, godard neutra knausgaard heirloom activated charcoal disrupt mixtape.</p>
-                  </div><!-- /blue-circle -->
-                </div><!-- /circle -->
+
               </div><!-- /col-sm-4 -->
 
               <div class="col-sm-4">
-                <div class="circle">
-                  <div class="blue-circle">
+                  <div class="blue-circle"></div><!-- /blue-circle -->
+
                     <h3 class="text-uppercase text-center">ios &amp; Android</h3>
                     <p class="text-center">Cardigan enamel pin messenger bag, marfa affogato blue bottle next level. Letterpress viral messenger bag gentrify migas skateboard palo santo, godard neutra knausgaard heirloom activated charcoal disrupt mixtape.</p>
-                  </div><!-- /blue-circle -->
-                </div><!-- /circle -->
+
               </div><!-- /col-sm-4 -->
 
             </div><!-- /row -->
@@ -69,137 +114,123 @@
         <section id="features" class="features">
 
           <h2 class="text-center text-uppercase">Features</h2>
-          <div class="container">
+          <div class="container cinema">
             <div class="row">
               <div class="left-features col-sm-4">
 
                 <div class="item-feature row">
                   <div class="content col-sm-8">
                     <h4>Facebook &amp; Twitter</h4>
-                    <p>Kale chips activated charcoal kombucha master cleanse kickstarter. Hexagon gluten-free snackwave, stumptown meditation everyday carry roof party cornhole.</p>
+                    <p>Kale chips activated charcoal kombucha master cleanse kickstarter.</p>
                   </div><!-- /content -->
 
                   <div class="col-sm-4">
-                    <div class="blue-circle">
-
-                    </div><!-- /blue-circle -->
+                    <div class="blue-circle"></div><!-- /blue-circle -->
                   </div><!--/col-sm-4 -->
                 </div><!-- /item-feature -->
 
                 <div class="item-feature row">
                   <div class="content col-sm-8">
                     <h4>User Points</h4>
-                    <p>Kale chips activated charcoal kombucha master cleanse kickstarter. Hexagon gluten-free snackwave, stumptown meditation everyday carry roof party cornhole.</p>
+                    <p>Kale chips activated charcoal kombucha master cleanse kickstarter.</p>
                   </div><!-- /content -->
 
                   <div class="col-sm-4">
-                    <div class="blue-circle">
-                    </div><!-- /blue-circle -->
+                    <div class="blue-circle"></div><!-- /blue-circle -->
                   </div><!--/col-sm-4 -->
                 </div><!-- /item-feature -->
 
                 <div class="item-feature row">
                   <div class="content col-sm-8">
                     <h4>Buy Tickets Online</h4>
-                    <p>Kale chips activated charcoal kombucha master cleanse kickstarter. Hexagon gluten-free snackwave, stumptown meditation everyday carry roof party cornhole.</p>
+                    <p>Kale chips activated charcoal kombucha master cleanse kickstarter.</p>
                   </div><!-- /content -->
                   <div class="col-sm-4">
 
-                    <div class="blue-circle">
-                    </div><!-- /blue-circle -->
+                    <div class="blue-circle"></div><!-- /blue-circle -->
                   </div><!--/col-sm-4 -->
                 </div><!-- /item-feature -->
 
                 <div class="item-feature row">
                   <div class="content col-sm-8">
                     <h4>Watch Movie Trailers</h4>
-                    <p>Kale chips activated charcoal kombucha master cleanse kickstarter. Hexagon gluten-free snackwave, stumptown meditation everyday carry roof party cornhole.</p>
+                    <p>Kale chips activated charcoal kombucha master cleanse kickstarter.</p>
                   </div><!-- /content -->
 
                   <div class="col-sm-4">
-                    <div class="blue-circle">
-                    </div><!-- /blue-circle -->
+                    <div class="blue-circle"></div><!-- /blue-circle -->
                   </div><!--/col-sm-4 -->
                 </div><!-- /item-feature -->
 
                 <div class="item-feature row">
                   <div class="content col-sm-8">
                     <h4>Check seat availability</h4>
-                    <p>Kale chips activated charcoal kombucha master cleanse kickstarter. Hexagon gluten-free snackwave, stumptown meditation everyday carry roof party cornhole.</p>
+                    <p>Kale chips activated charcoal kombucha master cleanse kickstarter.</p>
                   </div><!-- /content -->
 
                   <div class="col-sm-4">
-                    <div class="blue-circle">
-                    </div><!-- /blue-circle -->
+                    <div class="blue-circle"></div><!-- /blue-circle -->
                   </div><!--/col-sm-4 -->
                 </div><!-- /item-feature -->
-
               </div><!-- /left-features -->
 
-
-              <div class="features-image col-sm-4">
-                <img src="img/features.png" alt="features img">
+              <div class="features-image text-center col-sm-4">
+                <img src="img/movie-features.png" class="img-responsive" alt="features img">
               </div><!-- /features-image -->
 
               <div class="right-features col-sm-4">
                 <div class="item-feature row">
                   <div class="content col-sm-8 col-sm-push-4 text-right">
                     <h4>Pay with credit card</h4>
-                    <p>Kale chips activated charcoal kombucha master cleanse kickstarter. Hexagon gluten-free snackwave, stumptown meditation everyday carry roof party cornhole.</p>
+                    <p>Kale chips activated charcoal kombucha master cleanse kickstarter.</p>
                   </div><!-- /content -->
 
                   <div class="col-sm-4 col-sm-pull-8">
-                    <div class="blue-circle">
-
-                    </div><!-- /blue-circle -->
+                    <div class="blue-circle"></div><!-- /blue-circle -->
                   </div><!--/col-sm-4 -->
                 </div><!-- /item-feature -->
 
                 <div class="item-feature row">
                   <div class="content col-sm-8 col-sm-push-4 text-right">
                     <h4>Rate the movie</h4>
-                    <p>Kale chips activated charcoal kombucha master cleanse kickstarter. Hexagon gluten-free snackwave, stumptown meditation everyday carry roof party cornhole.</p>
+                    <p>Kale chips activated charcoal kombucha master cleanse kickstarter.</p>
                   </div><!-- /content -->
 
                   <div class="col-sm-4 col-sm-pull-8">
-                    <div class="blue-circle">
-                    </div><!-- /blue-circle -->
+                    <div class="blue-circle"></div><!-- /blue-circle -->
                   </div><!--/col-sm-4 -->
                 </div><!-- /item-feature -->
 
                 <div class="item-feature row row">
                   <div class="content col-sm-8 col-sm-push-4 text-right">
                     <h4>Reward Points</h4>
-                    <p>Kale chips activated charcoal kombucha master cleanse kickstarter. Hexagon gluten-free snackwave, stumptown meditation everyday carry roof party cornhole.</p>
+                    <p>Kale chips activated charcoal kombucha master cleanse kickstarter.</p>
                   </div><!-- /content -->
 
                   <div class="col-sm-4 col-sm-pull-8">
-                    <div class="blue-circle">
-                    </div><!-- /blue-circle -->
+                    <div class="blue-circle"></div><!-- /blue-circle -->
                   </div><!--/col-sm-4 -->
                 </div><!-- /item-feature -->
 
                 <div class="item-feature row">
                   <div class="content col-sm-8 col-sm-push-4 text-right">
                     <h4>Check In Intergrated</h4>
-                    <p>Kale chips activated charcoal kombucha master cleanse kickstarter. Hexagon gluten-free snackwave, stumptown meditation everyday carry roof party cornhole.</p>
+                    <p>Kale chips activated charcoal kombucha master cleanse kickstarter.</p>
                   </div><!-- /content -->
 
                   <div class="col-sm-4 col-sm-pull-8">
-                    <div class="blue-circle">
-                    </div><!-- /blue-circle -->
+                    <div class="blue-circle"></div><!-- /blue-circle -->
                   </div><!--/col-sm-4 -->
                 </div><!-- /item-feature -->
 
                 <div class="item-feature row">
                   <div class="content col-sm-8 col-sm-push-4 text-right">
                     <h4>Access All Promos</h4>
-                    <p>Kale chips activated charcoal kombucha master cleanse kickstarter. Hexagon gluten-free snackwave, stumptown meditation everyday carry roof party cornhole.</p>
+                    <p>Kale chips activated charcoal kombucha master cleanse kickstarter.</p>
                   </div><!-- /content -->
 
                   <div class="col-sm-4 col-sm-pull-8">
-                    <div class="blue-circle">
-                    </div><!-- /blue-circle -->
+                    <div class="blue-circle"></div><!-- /blue-circle -->
                   </div><!--/col-sm-4 -->
                 </div><!-- /item-feature -->
 
@@ -208,31 +239,51 @@
           </div><!-- /container -->
         </section><!-- /#features -->
 
+
         <!-- Screenshots -->
         <section id="screenshots" class="screenshots">
           <h2 class="text-center text-uppercase">Screenshots</h2>
 
-          <div class="container">
+          <div class="container cinema">
             <div class="row">
 
+              <!-- modal  screenshots -->
               <div class="col-sm-4">
-                <img class="img-responsive" src="img/cinema.jpg" alt="screenshot of cinema poster">
+                <a href="#modal" data-toggle="modal" data-image-url="img/cinema.jpg">
+                  <img class="img-responsive" src="img/cinema.jpg" alt="screenshot of cinema poster">
+                </a>
               </div><!-- /col-sm-4 -->
               <div class="col-sm-4">
-                <img class="img-responsive" src="img/trailer.jpg" alt="screenshot of cinema trailer">
+                <a href="#modal" data-toggle="modal" data-image-url="img/trailer.jpg">
+                  <img class="img-responsive" src="img/trailer.jpg" alt="screenshot of cinema trailer">
+                </a>
               </div><!-- /col-sm-4 -->
               <div class="col-sm-4">
-                <img class="img-responsive" src="img/rewards.jpg" alt="screenshot of rewards">
+                <a href="#modal" data-toggle="modal" data-image-url="img/rewards.jpg">
+                  <img class="img-responsive" src="img/rewards.jpg" alt="screenshot of rewards">
+                </a>
               </div><!-- /col-sm-4 -->
+              <!-- /modal -->
 
             </div><!-- /row -->
           </div><!-- /container -->
+
+          <!-- modal -->
+          <div id="modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal" aria-hidden="true">
+
+            <div class="modal-body">
+              <img src="#">
+              <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+            </div><!-- /modal-body -->
+          </div><!-- /#modal -->
+
+
         </section><!-- /#screenshots -->
 
-        <!-- Parrallax -->
+        <!-- Parallax -->
         <section id="parallax" class="parallax">
           <div class="container">
-            <h2 class="parallax text-center">La La Land an American romantic musical film starring <br> Ryan Gosling and Emma Stone</h2>
+            <h2 class="parallax text-center">La La Land an American romantic <br>musical film starring<br> <span>Ryan Gosling and Emma Stone</span></h2>
           </div><!-- /container -->
         </section><!-- /#parallax -->
 
@@ -240,35 +291,35 @@
         <section id="download" class="download">
           <h2 class="text-center text-uppercase">Download</h2>
 
-          <div class="container-fluid">
+          <div class="container-fluid cinema">
             <div class="row">
               <div class="content-downloads clearfix">
                 <div class="phone">
-                  <img class="img-responsive" src="img/masterpiece.png" alt="iphone image">
+                  <img class="img-responsive" src="img/dansing.png" class="img-responsive" alt="iphone image">
                 </div><!-- /phone -->
 
                 <div class="download-empty"></div>
 
-                <div class="container">
+                <div class="container download">
                   <div class="row">
 
                     <div class="col-sm-5 col-sm-offset-7">
                       <h2 class="text-center text-uppercase">Choose your platform</h2>
 
                       <section class="platforms text-center">
-                        <div class="col-md-5 col-sm-6">
+                        <div class="col-md-5  col-sm-6">
                           Download for <b>Apple iOS</b>
                         </div><!-- /col -->
 
-                        <div class="col-md-5 col-sm-6">
+                        <div class="col-md-5 col-md-offset-1 col-sm-6">
                           Download for <b>Android</b>
                         </div><!-- /col -->
 
                       </section><!-- /platforms -->
-                    </div><!-- /col -->
+                    </div><!-- /col-sm-5 -->
 
                   </div><!-- /row -->
-                </div><!-- /container -->
+                </div><!-- /container download -->
 
               </div><!-- /content-downloads -->
             </div><!-- /row -->
@@ -278,7 +329,7 @@
         <section id="support" class="support">
           <h2 class="text-center text-uppercase">Support</h2>
           <p class="text-center">Please fill out the enquery form</p>
-          <div class="container">
+          <div class="container cinema">
             <div class="row">
               <div class="col-md-8 col-md-offset-2">
 
@@ -304,8 +355,8 @@
           </div><!-- /container -->
         </section><!-- /#support -->
 
-        <footer>
-          <p class="text-center text-uppercase">Joanna Katsifaraki All Rights Reserved &copy; 2017</p>
+        <footer id="footer">
+          <p class="text-center text-uppercase">Joanna Katsifaraki &copy; 2017&dash; All Rights Reserved </p>
         </footer>
 
 

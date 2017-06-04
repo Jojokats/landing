@@ -56,6 +56,270 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/*=== General ===*/
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body > section {
+  clear: both;
+  padding: 90px 0;
+}
+
+h2, h3 {
+  color: #15365b;
+  margin-bottom: 30px;
+}
+
+h4 {
+  color: #15365b;
+  text-transform: uppercase;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+h2:after,
+h3:after {
+  content: "";
+  height: 3px;
+  width: 40px;
+  background-color: #DF811F;
+  display: block;
+  margin: 0 auto;
+  margin-top: 8px;
+}
+
+.blue-circle {
+  width: 100%;
+  background-color: #15365b;
+  padding-bottom: 100%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+#about .blue-circle {
+  width: 50%;
+  padding-bottom: 50%;
+  margin-bottom: 30px;
+}
+
+/*=== Navbar ===*/
+header nav.navbar-default {
+  box-shadow: none;
+  background-color: transparent;
+  border: none;
+  min-height: 60px;
+  padding-top: 10px;
+  background-color: rgba(28, 59, 87, 0.9);
+}
+
+.nav > li > a {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1.3em;
+  text-shadow: 1px 1px 1px black;
+  -webkit-text-shadow: 1px 1px 1px black;
+  -moz-text-shadow: 1px 1px 1px black;
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus
+ {
+  background-color: transparent;
+  color: #DF811F;
+  transition: all .3s ease;
+}
+
+
+/*=== Carousel Slider ===*/
+section#slider {
+  background: #1e3d5a; /* Old browsers */
+  background: -moz-linear-gradient(top, #1e3d5a 1%, #0c223b 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #1e3d5a 1%,#0c223b 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #1e3d5a 1%,#0c223b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3d5a', endColorstr='#0c223b',GradientType=0 ); /* IE6-9 */
+  min-height: 700px;
+  padding: 100px 0;
+}
+
+section#slider img {
+  margin: 0 auto;
+}
+
+
+/*=== Container ===*/
+.container.cinema {
+  padding-top: 40px;
+}
+
+
+/*=== About ===*/
+#about p {
+  margin-top: 2.5em;
+}
+
+/*=== Features ===*/
+
+section#features {
+  background-color: #f5f5f5;
+}
+
+#features .item-feature {
+  margin-bottom: 30px;
+}
+
+/*=== Screenshots ===*/
+section#screenshots {
+  padding-bottom: 120px;
+}
+
+/*=== Modal ===*/
+.modal-body {
+  text-align: center;
+}
+
+.modal .btn {
+  padding: 10px 40px;
+  background-color: #DF811F;
+  color: #fff;
+}
+
+
+/*=== Parallax ===*/
+section#parallax {
+  height: 500px;
+  background-image: url('../img/emma@1x.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+section#parallax h2.parallax {
+  color: #fff;
+  font-size: 3.6em;
+  font-weight: 300;
+  /*-webkit-text-shadow: 0px 7px 8px black;
+  -moz-text-shadow: 0px 7px 8px black;
+  text-shadow: 0px 5px 8px black;*/
+  padding: 0px 30px;
+}
+
+section#parallax h2.parallax:after {
+  display: none;
+}
+
+section#parallax h2.parallax span {
+  color: #DF811F;
+  font-weight:500;
+  -webkit-text-shadow: 0px 7px 8px black;
+  -moz-text-shadow: 0px 7px 8px black;
+  text-shadow: 0px 5px 8px #635e56;
+}
+
+
+/*=== Download ===*/
+section#download .content-downloads {
+  height: 700px;
+  position: relative;
+}
+
+section#download .phone {
+  position: relative;
+  width: 50%;
+  float: left;
+  height: 100%;
+}
+
+section#download .phone img {
+  position: absolute;
+  bottom: 50px;
+  left: 15%;
+}
+
+section#download .download-empty {
+  width: 50%;
+  background-color: #fff;
+  float: right;
+  height: 100%;
+  z-index: 2;
+  background-image: url('../img/slider_b2.png');
+  background-repeat: no-repeat;
+  /*background-size: cover;*/
+  background-position: bottom left;
+}
+
+section#download .download {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50px;
+  margin: 0 auto;
+}
+
+section .platforms > div {
+  border-radius: 5px;
+  border: 1px solid #15365b;
+  padding: 11px 0;
+  font-size: 1.2em;
+  position: relative;
+  padding-left: 50px;
+  color: #15365b;
+}
+
+section.platforms {
+  background-color: beige;
+}
+
+
+/*=== Contact ===*/
+section#support {
+  background-color: #1a3d61;
+}
+
+section#support h2,
+section#support p {
+  color: #fff;
+}
+
+section#support p {
+  font-size: 1.6em;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+
+section#support input,
+section#support textarea {
+  min-height: 50px;
+  margin-bottom: 20px;
+  font-size: 1.4em;
+}
+
+section#support input.btn {
+  padding: 0px 40px;
+  color: #DE8110;
+  font-size: 1.4em;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+
+/*=== Footer ===*/
+#footer p {
+  background-color: #102745;
+  margin: 0;
+  padding: 30px 0;
+  color: #fff;
+}
+
+
+
+
+
 
 
 
