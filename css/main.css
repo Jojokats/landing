@@ -302,6 +302,13 @@ section.platforms {
   background-color: beige;
 }
 
+section.platforms i {
+  font-size: 2.5em;
+  position: absolute;
+  left: 20px;
+  top: 12px;
+}
+
 
 /*=== Contact ===*/
 section#support {
