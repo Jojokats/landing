@@ -116,9 +116,13 @@ h3:after {
   font-size: 2em;
 }
 
+#features .blue-circle div i {
+  font-size: 2em;
+}
+
 #about .blue-circle {
-  width: 50%;
-  padding-bottom: 50%;
+  width: 40%;
+  padding-bottom: 40%;
   margin-bottom: 30px;
 }
 
