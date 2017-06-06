@@ -1,4 +1,5 @@
 
+
 $(document).ready(function() {
 
   $('section#screenshots a').on('click', function() {
@@ -24,5 +25,15 @@ $(document).ready(function() {
       nav.removeClass('effect');
     }
   });
+
+});
+
+
+smoothScroll.init({
+  speed: 700,
+  offset: 50,
+  easing: 'easeInOutQuad',
+  updateURL: false,
+  offset: 50
 
 });

@@ -121,8 +121,8 @@ h3:after {
 }
 
 #about .blue-circle {
-  width: 40%;
-  padding-bottom: 40%;
+  width: 30%;
+  padding-bottom: 30%;
   margin-bottom: 30px;
 }
 
@@ -185,6 +185,11 @@ section#slider img {
 
 
 /*=== About ===*/
+
+#about .app {
+  margin-bottom: 60px;
+}
+
 #about p {
   margin-top: 2.5em;
 }
@@ -229,24 +234,28 @@ section#parallax {
 section#parallax h2.parallax {
   color: #fff;
   font-size: 3.6em;
-  font-weight: 300;
-  /*-webkit-text-shadow: 0px 7px 8px black;
-  -moz-text-shadow: 0px 7px 8px black;
-  text-shadow: 0px 5px 8px black;*/
-  padding: 0px 30px;
+  font-weight: 600;
+  padding-top: 5rem;
 }
 
 section#parallax h2.parallax:after {
   display: none;
 }
 
-section#parallax h2.parallax span {
+section#parallax .ipad {
+  color: #fff;
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+/*section#parallax h2.parallax span {
   color: #DF811F;
   font-weight:500;
   -webkit-text-shadow: 0px 7px 8px black;
   -moz-text-shadow: 0px 7px 8px black;
   text-shadow: 0px 5px 8px #635e56;
-}
+}*/
 
 
 /*=== Download ===*/
@@ -321,7 +330,7 @@ section#support p {
 }
 
 section#support p {
-  font-size: 1.6em;
+  font-size: 2em;
   font-weight: 300;
   margin-bottom: 5px;
 }
@@ -339,6 +348,14 @@ section#support input.btn {
   font-size: 1.4em;
   font-weight: 600;
   letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+  border: transparent;
+}
+
+section#support input.btn:hover {
+  background-color: rgb(222, 129, 16);
+  color: #fff;
 }
 
 
