@@ -55,6 +55,12 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+   /*font-family: 'Lora', serif;
+   font-family: 'Nunito', sans-serif;
+
+   font-family: 'Montserrat', sans-serif;
+  font-family: 'Istok Web', sans-serif;
+   */
 
 /*=== General ===*/
 * {
@@ -65,6 +71,12 @@ textarea {
 body > section {
   clear: both;
   padding: 90px 0;
+  font-family: 'Istok Web', sans-serif;
+}
+
+h2, h3, h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
 }
 
 h2, h3 {
@@ -79,6 +91,7 @@ h4 {
 
 h2 {
   margin-top: 0;
+  letter-spacing: 1px;
 }
 
 h2:after,
@@ -90,6 +103,10 @@ h3:after {
   display: block;
   margin: 0 auto;
   margin-top: 8px;
+}
+
+p {
+  font-size: 1.2em;
 }
 
 .blue-circle {
@@ -131,26 +148,30 @@ h3:after {
   box-shadow: none;
   background-color: transparent;
   border: none;
-  padding-top: 4px;
-  min-height: 90px;
+  /*padding-top: 4px;*/
+  min-height: 95px;
   transition: 1s all ease;
 }
 
 .effect {
   background-color: #123156;
-  min-height: 30px;
-  padding-top: 9px;
-  padding-bottom: 9px;
+  min-height: 40px;
   box-shadow: 0 0 10px #303030;
 }
 
 .nav > li > a {
+  font-family: 'Istok Web', sans-serif;
   text-transform: uppercase;
   color: #fff;
   font-size: 1.3em;
   text-shadow: 1px 1px 1px black;
   -webkit-text-shadow: 1px 1px 1px black;
   -moz-text-shadow: 1px 1px 1px black;
+}
+
+.nav > li.active {
+  transition: 1s all ease;
+  background-color: #4CACA9;
 }
 
 .nav > li > a:hover,
@@ -330,7 +351,7 @@ section#support p {
 }
 
 section#support p {
-  font-size: 2em;
+  font-size: 1.6em;
   font-weight: 300;
   margin-bottom: 5px;
 }
@@ -344,8 +365,9 @@ section#support textarea {
 
 section#support input.btn {
   padding: 0px 40px;
-  color: #DE8110;
-  font-size: 1.4em;
+  color: #fff;
+  background-color: rgb(222, 129, 16);
+  font-size: 1.6em;
   font-weight: 600;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -354,8 +376,8 @@ section#support input.btn {
 }
 
 section#support input.btn:hover {
-  background-color: rgb(222, 129, 16);
-  color: #fff;
+  background-color: #fff;
+  color: #DE8110;
 }
 
 
@@ -365,6 +387,31 @@ section#support input.btn:hover {
   margin: 0;
   padding: 30px 0;
   color: #fff;
+  letter-spacing: 1.5px;
+  font-size: 1em;
+}
+
+
+/*** Animations ***/
+
+.animation1,
+.animation2,
+.animation3 {
+  opacity: 0;
+}
+
+.animation1 {
+
+}
+
+.animation2 {
+  animation-delay: 0.3s;
+  -webkit-animation-delay: 0.3s;
+}
+
+.animation3 {
+  animation-delay: 0.6s;
+  -webkit-animation-delay: 0.6s;
 }
 
 
