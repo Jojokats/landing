@@ -64,9 +64,57 @@ $(document).ready(function() {
       offset: '50%'
   });
 
-});
+  $('#form').bootstrapValidator({
+    message: 'This value is not valid',
+    feedbackIcons: {
+      valid: 'glyphicon glyphicon-ok',
+			invalid: 'glyphicon glyphicon-remove',
+			validating: 'glyphicon glyphicon-refresh',
+    },
+    fields: {
+      name: {
+        validators: {
+          notEmpty: {
+            message: 'This field is required and cannot be empty'
+          }
+        } //validators
+      }, //name
+      email: {
+        validators: {
+          notEmpty: {
+            message: 'This field is required and cannot be empty'
+        },
+          emailAddress: {
+            message: 'The input is not a valid address'
+        }
+      } //validators
+    }, //email
+    message: {
+      validators: {
+        notEmpty: {
+          message: 'The message cannot be empty, kindly add a message.'
+        }
+      } //validators
+    } //message
+  } // fields
+
+  }).on('success.form.bv', function(e) {
+    e.preventDefault();
+
+		var $form = $(e.target);
+
+		var bv = $form.data('bootstrapValidator');
+
+		$.post($form.attr('action'), $form.serialize(), function(result) {
+			console.log(result);
+		},'json' );
+  });  //success.form.bv
+
+});  //end of jQuery
 
 
+
+// smoothScroll
 smoothScroll.init({
   speed: 700,
   offset: 50,

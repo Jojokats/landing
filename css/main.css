@@ -414,6 +414,44 @@ section#support input.btn:hover {
   -webkit-animation-delay: 0.6s;
 }
 
+/*** Form ***/
+
+#support #form > input {
+    margin-left: -15px;
+}
+
+#form > div > small {
+  font-size: 1.4em;
+}
+
+.has-success .form-control-feedback {
+  background-color: #3c763d;
+  border-radius: 50%;
+  color: #fff;
+  top: 8px;
+
+}
+
+.has-error .form-control-feedback {
+  background-color: #a94442;
+  border-radius: 50%;
+  color: #fff;
+  top: 8px;
+}
+
+.form-horizontal .has-feedback .form-control-feedback {
+  right: 22px!important;
+  font-size: 1.3em;
+  top: 8px!important;
+}
+
+.has-error .help-block {
+  background-color: #a94442;
+  color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+}
+
 
 
 

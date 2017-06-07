@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/bootstrapValidator.min.css">
         <link href="https://fonts.googleapis.com/css?family=Istok+Web:400,700|Montserrat:400,700" rel="stylesheet">
         <link rel="stylesheet" href="css/main.css">
 
@@ -360,7 +361,7 @@
             <div class="row">
               <div class="content-downloads clearfix">
                 <div class="phone">
-                  <img class="img-responsive animation1" src="img/dansing.png" class="img-responsive" alt="iphone image">
+                  <img class="img-responsive animation1" src="img/dansing.png" alt="iphone image">
                 </div><!-- /phone -->
 
                 <div class="download-empty"></div>
@@ -394,6 +395,7 @@
         </section><!-- /#download -->
 
 
+        <!-- #Support -->
         <section id="support" class="support">
           <h2 class="text-center text-uppercase">Support</h2>
           <p class="text-center">Please fill out the enquery form</p>
@@ -401,13 +403,14 @@
             <div class="row">
               <div class="col-md-8 col-md-offset-2">
 
-                <form action="" id="form">
+                <!-- Form -->
+                <form id="form" action="ajaxSubmit.php" class="form-horizontal">
                   <div class="form-group">
-                    <input class="form-control" type="text" placeholder="Name" name="name">
+                    <input class="form-control" type="text" placeholder="Name" name="name" required>
                   </div><!-- /form-group -->
 
                   <div class="form-group">
-                    <input class="form-control" type="email" placeholder="Email" name="email">
+                    <input class="form-control" type="email" placeholder="Email" name="email" required>
                   </div><!-- /form-group -->
 
                   <div class="form-group">
@@ -417,6 +420,7 @@
                   <input class="btn btn-default" type="submit" value="Send">
 
                 </form>
+                <!-- /Form -->
 
               </div><!-- /col -->
             </div><!-- /row -->
@@ -438,6 +442,7 @@
         <script src="js/bootstrap.min.js"></script>
         <script src="js/smooth-scroll.min.js"></script>
         <script src="js/jquery.waypoints.min.js"></script>
+        <script src="js/bootstrapValidator.min.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>
