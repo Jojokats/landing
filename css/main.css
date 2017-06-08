@@ -451,7 +451,28 @@ section#support input.btn:hover {
   padding: 10px;
   border-radius: 4px;
 }
+/*** Back to top ***/
+.back-to-top {
+  display: none;
+  position: fixed;
+  font-size: 2rem;
+  bottom: 20px;
+  right: 20px;
+  color:#fff;
+  background: #4CACA9;
+  border-radius: 5px;
+  transition: all 1s ease;
+}
 
+.back-to-top i.fa {
+  padding: 8px 10px 15px;
+}
+
+.back-to-top:hover {
+  background: rgb(222, 129, 16);
+  color:#4CACA9;
+
+}
 
 
 
