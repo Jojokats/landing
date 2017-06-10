@@ -110,8 +110,6 @@ $(document).ready(function() {
 		},'json' );
   });  //success.form.bv
 
-
-  //Scroll to Top
   var btt = $('.back-to-top');
 
   btt.on('click', function(e) {

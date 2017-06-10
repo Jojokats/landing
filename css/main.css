@@ -328,10 +328,6 @@ section .platforms > div {
   color: #15365b;
 }
 
-section.platforms {
-  background-color: beige;
-}
-
 section.platforms i {
   font-size: 2.5em;
   position: absolute;
@@ -476,24 +472,117 @@ section#support input.btn:hover {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ==========================================================================
    Media Queries
    ========================================================================== */
+
+@media(max-width: 767px) {
+
+section#slider {
+      min-height: 500px;
+  }
+
+  .navbar-default .navbar-collapse {
+    border: none;
+  }
+
+  .navbar-collapse.in,
+  .collapsing {
+    background-color: #123156;
+  }
+
+  .navbar-header .navbar-toggle:hover {
+    background-color: transparent;
+  }
+
+  .navbar-header .navbar-toggle:focus {
+    background-color: #123156;
+  }
+
+  .navbar-default .navbar-toggle {
+    background-color: #123156;
+  }
+
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+  }
+
+  #about .blue-circle,
+  #features .blue-circle {
+    width: 30%;
+    padding-bottom: 30%;
+  }
+
+  #features .featured-image {
+    text-align: center;
+  }
+
+  #features > div > div > div.features-image.text-center.col-sm-4 > img {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  #features h4,
+  #features p {
+    text-align: center;
+    /*color: red;*/
+  }
+
+  #screenshots a img {
+    max-width: 80%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+#parallax {
+    background-position: bottom right;
+}
+
+  #download  div.phone,
+  #download div.download-empty {
+    width: 100%;
+  }
+
+#download > div > div > div > div.phone > img {
+    bottom: 235px;
+    left: 2%;
+}
+
+#download div.download-empty {
+    position: relative;
+    background-position: bottom center;
+    height: 85%
+}
+
+#download .content-downloads {
+  height: 600px;
+}
+
+#download div.container.download {
+    top: 525px;
+    z-index: 10;
+}
+
+#download .platforms > div {
+  margin-bottom: 20px;
+}
+
+#download .platforms i {
+  top: 4px;
+  font-size: 2em;
+}
+
+#support > p.text-center {
+  font-size: 1.5em;
+}
+
+} /* End of @media(max-width: 767px*/
+
+
+@media(min-width: 768px) {}
+@media(min-width: 992px) {}
+@media(min-width: 1200px) {}
+
 
 @media only screen and (min-width: 35em) {
 

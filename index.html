@@ -23,6 +23,16 @@
           <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container">
 
+              <!-- Toggle button -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+              </div><!-- /Toggle button -->
+
               <div class="navbar-collapse collapse">
                 <ul class="nav nav-justified">
                   <li><a data-scroll href="#about">App</a></li>
@@ -31,20 +41,9 @@
                   <li><a data-scroll href="#download">Download</a></li>
                   <li><a data-scroll href="#support">Support</a></li>
                 </ul>
-              </div><!-- /nav-justified -->
+              </div><!-- /navbar-collapse -->
 
             </div><!-- /container -->
-
-
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-
-            </div><!-- /navbar-header -->
 
           </nav>
         </header>
@@ -359,6 +358,7 @@
 
           <div class="container-fluid cinema">
             <div class="row">
+
               <div class="content-downloads clearfix">
                 <div class="phone">
                   <img class="img-responsive animation1" src="img/dansing.png" alt="iphone image">
@@ -373,12 +373,12 @@
                       <h2 class="text-center text-uppercase">Choose your platform</h2>
 
                       <section class="platforms text-center">
-                        <div class="col-md-5  col-sm-6 animation2">
+                        <div class="col-md-5 col-xs-10 col-xs-offset-1 col-sm-6 animation2">
                           <i class="fa fa-apple" aria-hidden="true"></i>
                           Download for <b>Apple iOS</b>
                         </div><!-- /col -->
 
-                        <div class="col-md-5 col-md-offset-1 col-sm-6 animation3">
+                        <div class="col-md-5 col-xs-10 col-xs-offset-1 col-md-offset-1 col-sm-6 animation3">
                           <i class="fa fa-android" aria-hidden="true"></i>
                           Download for <b>Android</b>
                         </div><!-- /col -->
@@ -390,6 +390,7 @@
                 </div><!-- /container download -->
 
               </div><!-- /content-downloads -->
+
             </div><!-- /row -->
           </div><!-- /container-fluid -->
         </section><!-- /#download -->
@@ -405,19 +406,21 @@
 
                 <!-- Form -->
                 <form id="form" action="ajaxSubmit.php" class="form-horizontal">
-                  <div class="form-group">
-                    <input class="form-control" type="text" placeholder="Name" name="name" required>
-                  </div><!-- /form-group -->
+                      <div class="form-group">
+                          <input class="form-control" type="text" placeholder="Name" name="name">
+                      </div>
 
-                  <div class="form-group">
-                    <input class="form-control" type="email" placeholder="Email" name="email" required>
-                  </div><!-- /form-group -->
+                      <div class="form-group">
+                          <input class="form-control" type="email" placeholder="Email" name="email">
+                      </div>
 
-                  <div class="form-group">
-                    <textarea class="form-control" name="message"  placeholder="Message"rows="8" cols="40"></textarea>
-                  </div><!-- /form-group -->
+                      <div class="form-group">
+                          <textarea class="form-control" placeholder="Message" name="message" cols="30" rows="10"></textarea>
+                      </div>
 
-                  <input class="btn btn-default" type="submit" value="Send">
+                      <div class="form-group">
+                          <input class="btn btn-default" type="submit" value="Send">
+                      </div>
 
                 </form>
                 <!-- /Form -->
@@ -447,8 +450,8 @@
         <script src="js/bootstrap.min.js"></script>
         <script src="js/smooth-scroll.min.js"></script>
         <script src="js/jquery.waypoints.min.js"></script>
-        <script src="js/bootstrapValidator.min.js"></script>
-        
+        <script src="js/bootstrapValidator.js"></script>
+
 
         <script src="js/main.js"></script>
     </body>
